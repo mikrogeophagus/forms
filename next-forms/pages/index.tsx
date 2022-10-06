@@ -17,6 +17,7 @@ const TopPage = () => {
       });
       alert('メッセージ: ' + response.data?.message);
     } catch (err) {
+      console.dir(err);
       alert(err);
     }
   };
