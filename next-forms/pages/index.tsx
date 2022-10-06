@@ -15,6 +15,7 @@ const TopPage = () => {
           'Content-Type': 'application/json'
         }
       });
+      console.dir(response);
       alert('メッセージ: ' + response.data?.message);
     } catch (err) {
       console.dir(err);
